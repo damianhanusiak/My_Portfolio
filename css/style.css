@@ -8,19 +8,25 @@
 	--neon-green: #2ecc71;
 	--green: #00cc66;
 	--blue: #3498db;
+	--dark-grey: #191919;
 }
 
 body {
 	font-family: "Montserrat", sans-serif;
-	overflow: hidden;
-	background-color: #191919;
+	overflow-x: hidden !important;
+	background: var(--dark-grey);
+	height: 200vh; /* usunąc*/
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background: var(--dark-grey);
 	z-index: 1;
 	padding: 10px 20px;
+	height: 10vh;
 }
 
 nav {
@@ -52,22 +58,29 @@ nav.active {
 	cursor: pointer;
 }
 
+.hamburger {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
 @media screen and (min-width: 1000px) {
 	.hamburger {
 		display: none;
 	}
 
 	header {
-		height: 10vh;
+		height: 12vh;
 	}
 
 	nav {
 		flex-direction: row;
+		align-items: center;
 		background-color: transparent;
 		transform: translateX(0);
-		padding: 20px 20px;
+		padding: 30px 20px;
 		font-weight: normal;
-		height: max-content;
+		height: inherit;
 		width: 70%;
 		font-size: 24px;
 	}
@@ -86,5 +99,55 @@ nav.active {
 
 	.nav-link:hover::after {
 		width: 105%;
+	}
+}
+
+.home {
+	margin-top: 120px;
+}
+
+.home-image {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+}
+
+.home-content {
+	text-align: center;
+	color: white;
+}
+
+.home-content h1 {
+	margin-top: 32px;
+	font-size: 65px;
+}
+
+.home-content span {
+	font-size: 28px;
+	display: block;
+}
+
+.home-content span:nth-of-type(1) {
+	margin-top: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+	.home-image {
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.home {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 85%;
+		margin: 80px auto;
+	}
+
+	.home-image {
+		order: 2;
+		width: 40%;
 	}
 }
