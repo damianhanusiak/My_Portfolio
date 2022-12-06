@@ -15,7 +15,6 @@ body {
 	font-family: "Montserrat", sans-serif;
 	overflow-x: hidden !important;
 	background: var(--dark-grey);
-	height: 200vh; /* usunąc*/
 }
 
 header {
@@ -27,6 +26,11 @@ header {
 	z-index: 1;
 	padding: 10px 20px;
 	height: 10vh;
+	transition: all 0.4s ease-in-out;
+}
+
+header.active {
+	box-shadow: rgba(255, 255, 255, 0.7) 0px 2px 5px;
 }
 
 nav {
@@ -103,7 +107,7 @@ nav.active {
 }
 
 .home {
-	margin-top: 120px;
+	margin-top: 80px;
 }
 
 .home-image {
@@ -150,4 +154,34 @@ nav.active {
 		order: 2;
 		width: 40%;
 	}
+}
+
+.about-me-title {
+	font-size: 26px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 150px auto 20px auto;
+	position: relative;
+	width: max-content;
+}
+
+.title-main {
+	background: var(--neon-green);
+	padding: 10px;
+	border-top-left-radius: 15px;
+	display: inline;
+}
+
+.about-me-content {
+	color: white;
+	padding: 25px;
+	font-size: 21px;
+	text-align: justify;
+}
+
+.about-me-image {
+	width: 75%;
+	margin: 35px auto;
+	display: block;
 }
