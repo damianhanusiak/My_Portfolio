@@ -156,7 +156,7 @@ nav.active {
 	}
 }
 
-.about-me-title {
+.title {
 	font-size: 26px;
 	font-weight: bold;
 	color: white;
@@ -175,7 +175,7 @@ nav.active {
 
 .about-me-content {
 	color: white;
-	padding: 25px;
+	padding: 35px;
 	font-size: 21px;
 	text-align: justify;
 }
@@ -184,4 +184,53 @@ nav.active {
 	width: 75%;
 	margin: 35px auto;
 	display: block;
+}
+
+.tech-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 40px;
+	padding: 20px;
+}
+
+.tech-item {
+	padding: 30px;
+	box-shadow: rgba(75, 75, 75, 0.7) 2px 2px 2px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.tech-item:hover {
+	box-shadow: rgba(46, 204, 113, 0.7) 2px 2px 2px;
+}
+
+.tech-item img {
+	width: 80px;
+	height: 80px;
+}
+
+.tech-title {
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+	font-size: 17px;
+}
+
+.about-learning {
+	color: white;
+	padding: 35px;
+	font-size: 21px;
+	text-align: justify;
+}
+
+.about-learning a {
+	color: var(--neon-green);
+	text-decoration: none;
+}
+
+.about-learning a:hover {
+	text-decoration: underline;
 }
