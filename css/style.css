@@ -186,6 +186,17 @@ nav.active {
 	display: block;
 }
 
+@media screen and (min-width: 1200px) {
+	.about-me-content {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.about-me-image {
+		width: 30%;
+	}
+}
+
 .tech-content {
 	display: flex;
 	justify-content: center;
@@ -233,4 +244,21 @@ nav.active {
 
 .about-learning a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+	.about-learning {
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+footer {
+	margin-top: 200px; /* delete */
+	text-align: center;
+	background: var(--neon-green);
+	color: white;
+	padding: 15px;
+	font-size: 14px;
 }
