@@ -324,8 +324,94 @@ nav.active {
 	/* margin: 12px; */
 }
 
+.contact {
+	color: white;
+}
+
+.contact form {
+	margin: 50px auto;
+	width: 80%;
+}
+
+.contact form label {
+	display: block;
+	font-size: 20px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.contact form input {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 17px;
+	background-color: transparent;
+	border: 2px solid var(--neon-green);
+	border-radius: 5px;
+	padding: 7px;
+	color: white;
+	outline: none;
+	transition: 0.4s;
+}
+
+.contact form input:focus {
+	width: 100%;
+	border-color: var(--blue);
+}
+
+.contact form textarea {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	background-color: transparent;
+	border: 2px solid var(--neon-green);
+	border-radius: 7px;
+	outline: none;
+	transition: 0.4s;
+	color: white;
+	font-size: 17px;
+}
+
+.contact form textarea:focus {
+	border-color: var(--blue);
+}
+
+.contact form .send-msg {
+	display: block;
+	background-color: var(--neon-green);
+	padding: 14px 40px;
+	margin: 0 auto;
+	cursor: pointer;
+	color: white;
+	margin-top: 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+.contact form .send-msg:hover {
+	background-color: var(--blue);
+	padding: 14px 45px;
+}
+
+.contact-img {
+	display: block;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-icons img {
+	display: block;
+	width: 25%;
+	margin: 35px auto;
+}
+
 footer {
-	margin-top: 200px; /* delete */
 	text-align: center;
 	background: var(--neon-green);
 	color: white;
