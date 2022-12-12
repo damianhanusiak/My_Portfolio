@@ -254,6 +254,76 @@ nav.active {
 	}
 }
 
+.projects {
+	color: white;
+}
+
+.projects-content {
+	margin-top: 50px;
+}
+
+.project-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-card {
+	padding: 10px 40px;
+	/* width: 85%; */
+	margin-top: 80px;
+}
+
+.project-name {
+	font-weight: bold;
+	color: var(--neon-green);
+	border-bottom: 3px solid var(--neon-green);
+	font-size: 22px;
+}
+
+.project-link {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.project-link:hover {
+	color: var(--neon-green);
+}
+
+.project-card img {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.project-description {
+	margin-top: 30px;
+	text-align: justify;
+}
+
+.technologies-title {
+	font-weight: bold;
+	color: var(--neon-green);
+	border-bottom: 3px solid var(--neon-green);
+	font-size: 17px;
+	line-height: 36px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.technologies-icons {
+	display: flex;
+}
+
+.technologies-icons img {
+	width: 12%;
+	/* margin: 12px; */
+}
+
 footer {
 	margin-top: 200px; /* delete */
 	text-align: center;
