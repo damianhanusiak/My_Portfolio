@@ -68,7 +68,7 @@ nav.active {
 	right: 5px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
 	.hamburger {
 		display: none;
 	}
@@ -85,7 +85,7 @@ nav.active {
 		padding: 30px 20px;
 		font-weight: normal;
 		height: inherit;
-		width: 70%;
+		width: 90%;
 		font-size: 24px;
 	}
 
@@ -129,19 +129,14 @@ nav.active {
 .home-content span {
 	font-size: 28px;
 	display: block;
+	margin-top: 5px;
 }
 
 .home-content span:nth-of-type(1) {
 	margin-top: 15px;
 }
 
-@media screen and (min-width: 1000px) {
-	.home-image {
-		width: 35%;
-	}
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 	.home {
 		display: flex;
 		align-items: center;
@@ -153,6 +148,12 @@ nav.active {
 	.home-image {
 		order: 2;
 		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	nav {
+		width: 60%;
 	}
 }
 
@@ -186,14 +187,30 @@ nav.active {
 	display: block;
 }
 
-@media screen and (min-width: 1200px) {
-	.about-me-content {
-		width: 50%;
-		margin: 0 auto;
+@media screen and (min-width: 768px) {
+	.about-me-items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 85%;
+		margin: 80px auto;
 	}
 
 	.about-me-image {
-		width: 30%;
+		width: 40%;
+		order: -1;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.about-me-content {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.about-me-content {
+		width: 40%;
 	}
 }
 
@@ -246,9 +263,8 @@ nav.active {
 	text-decoration: underline;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 	.about-learning {
-		text-align: center;
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -321,7 +337,56 @@ nav.active {
 
 .technologies-icons img {
 	width: 12%;
-	/* margin: 12px; */
+}
+
+@media screen and (min-width: 768px) {
+	.projects-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.project-card {
+		width: 50%;
+	}
+
+	.project-card:nth-child(3),
+	.project-card:nth-child(4) {
+		margin-top: 170px;
+	}
+
+	.project-card img {
+		height: 30%;
+	}
+
+	.project-description {
+		min-height: 35%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.project-card {
+		width: 42%;
+	}
+
+	.technologies-icons img {
+		width: 7%;
+	}
+
+	.project-description {
+		min-height: 20%;
+	}
+
+	.project-card:nth-child(3),
+	.project-card:nth-child(4) {
+		margin-top: 70px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.project-description {
+		min-height: 15%;
+	}
 }
 
 .contact {
@@ -409,6 +474,44 @@ nav.active {
 	display: block;
 	width: 25%;
 	margin: 35px auto;
+}
+
+@media screen and (min-width: 768px) {
+	.contact-icons img {
+		width: 15%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contact-form {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contact-icons img {
+		width: 10%;
+	}
+
+	.contact-img {
+		width: 45%;
+	}
+
+	.contact form {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.contact {
+		width: 75%;
+		margin: 0 auto;
+	}
+	.contact-img {
+		width: 45%;
+	}
+
+	.contact form {
+		width: 40%;
+	}
 }
 
 footer {
