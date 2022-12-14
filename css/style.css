@@ -339,6 +339,21 @@ nav.active {
 	width: 12%;
 }
 
+.see-more {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 80px;
+}
+
+.see-more a {
+	text-decoration: none;
+	color: var(--neon-green);
+}
+
+.see-more a:hover {
+	text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
 	.projects-content {
 		display: flex;
@@ -374,12 +389,17 @@ nav.active {
 	}
 
 	.project-description {
-		min-height: 20%;
+		min-height: 22%;
 	}
 
 	.project-card:nth-child(3),
 	.project-card:nth-child(4) {
 		margin-top: 70px;
+	}
+
+	.see-more {
+		margin-top: 0;
+		font-size: 22px;
 	}
 }
 
@@ -485,7 +505,7 @@ nav.active {
 @media screen and (min-width: 1024px) {
 	.contact-form {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	.contact-icons img {
 		width: 10%;
@@ -514,10 +534,51 @@ nav.active {
 	}
 }
 
+.thanks-for-email {
+	color: white;
+	min-height: 94vh;
+}
+
+.thanks-for-email p {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.thanks-for-email p span {
+	font-size: 17px;
+	font-weight: normal;
+	display: block;
+	margin-top: 25px;
+}
+
+.thanks-for-email p span a {
+	text-decoration: none;
+	color: var(--neon-green);
+}
+
+.thanks-for-email p span a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 1280px) {
+	.thanks-for-email p {
+		font-size: 48px;
+	}
+
+	.thanks-for-email p span {
+		font-size: 22px;
+	}
+}
+
 footer {
 	text-align: center;
 	background: var(--neon-green);
 	color: white;
-	padding: 15px;
+	padding: 20px 0;
 	font-size: 14px;
 }
