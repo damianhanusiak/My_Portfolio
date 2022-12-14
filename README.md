@@ -8,4 +8,4 @@
 
 My portfolio website. Enjoy!✌️😎
 
-Live link: soon
+Live link: https://damianhanusiak.github.io/My_Portfolio/
